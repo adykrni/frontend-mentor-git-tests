@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #d5e1ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font-noto-sans-display), system-ui, sans-serif;
+}
+
+/* Card container */
+.card {
+    background-color: #FFFFFF;
+    width: 320px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* QR code image */
+.qr-code {
+    background-color: #3685FE;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Title */
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #27334B;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+/* Description */
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #73787F;
+    line-height: 1.5;
+    text-align: left;
+}
