@@ -1,25 +1,36 @@
 export default function Home() {
-  /** Same value as BASE_PATH in GitHub Actions so /public assets load under the repo subpath. */
   const basePath = process.env.BASE_PATH ?? "";
-  const qrSrc = `${basePath}/images/image-qr-code.png`;
+  const asset = (path: string) => `${basePath}${path}`;
 
   return (
-    <main>
+    <main className="page-shell">
       <div className="card">
         <img
-          className="qr-code"
-          src={qrSrc}
-          alt="QR code linking to Frontend Mentor"
-          width={288}
-          height={288}
+          className="illustration"
+          src={asset("/images/illustration-article.svg")}
+          alt=""
+          width={336}
+          height={201}
         />
-        <h1 className="title">
-          Improve your front-end skills by building projects
-        </h1>
+        <div className="chip">
+          <p className="chip-text">Learning</p>
+        </div>
+        <p className="description-main">Published 30 March 2026</p>
+        <h1 className="title">HTML &amp; CSS Foundations</h1>
         <p className="description">
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
         </p>
+        <div className="name-tag-container">
+          <img
+            className="avatar"
+            src={asset("/images/image-avatar.webp")}
+            alt=""
+            width={30}
+            height={30}
+          />
+          <p className="name-tag">Greg Hooper</p>
+        </div>
       </div>
     </main>
   );

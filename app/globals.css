@@ -1,51 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body styling */
 body {
-    background-color: #d5e1ef;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: var(--font-noto-sans-display), system-ui, sans-serif;
+  background-color: #f5d04e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem 1rem;
+  font-family: var(--font-noto-sans-display), system-ui, sans-serif;
+}
+
+.page-shell {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Card container */
 .card {
-    background-color: #FFFFFF;
-    width: 320px;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: left;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 300px;
+  max-width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 8px 8px 0 0 #000000;
+  gap: 10px;
 }
 
-/* QR code image */
-.qr-code {
-    background-color: #3685FE;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
+/* Illustration image */
+.illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Chip */
+.chip {
+  background-color: #f5d04e;
+  border-radius: 2px;
+  padding: 4px 8px;
+  width: fit-content;
+}
+
+/* Chip text */
+.chip-text {
+  font-size: 10px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* Description main */
+.description-main {
+  font-size: 10px;
+  font-weight: 400;
+  color: #575757;
+  line-height: 1.5;
+  text-align: left;
 }
 
 /* Title */
 .title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #27334B;
-    margin-bottom: 16px;
-    text-align: left;
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  width: 100%;
+  line-height: 1;
+}
+
+/* Title Hover state */
+.title:hover {
+  color: #f5d04e;
 }
 
 /* Description */
 .description {
-    font-size: 14px;
-    font-weight: 400;
-    color: #73787F;
-    line-height: 1.5;
-    text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+  color: #575757;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Name tag container */
+.name-tag-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* Avatar */
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+/* Name tag */
+.name-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.3;
+  text-align: left;
 }
